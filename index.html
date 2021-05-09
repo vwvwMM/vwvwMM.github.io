@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./star.ico">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>biography</title>
+</head>
+<body>
+    <h1>This is Vincent's biography</h1>
+    <span id="time"></span>
+    <div id="pic"><img src="./picture.jpg" alt="my picture" width="255px"></div>
+    <span id="bio">
+    <div>I'm from <a href="http://www.mingdao.edu.tw/homeX/Web/" id="school">Mingdao High School</a> in Taichung.
+    And now, I'm a college student major in <a href="https://web.ee.ntu.edu.tw/" id="department">NTUEE</a></div>
+    Below are my picture and three hobbies:
+    <li>Playing badminton, I'm a member of <a href="https://www.facebook.com/groups/349281185102328" id="badminton">badminton team of NTUEE</a></li>
+    <li>Playong table Tennis, yes, I'm also a member of <a href="https://www.facebook.com/groups/203025826428980" id="table">table tennis  team of NTUEE</a></li>
+    <li>Playing Mahjong. My friends in NTU create a group for playing <a href="https://www.gamesofa.com/mj/" id="majong">Mahjong</a>.</li>
+    <p>
+        Recently I participate in many activities such as makeNTU, making electrical car, general physics experiment contest.<br>
+        So I can't spend too much time in updating this website. If you want to know more about me,
+         please <a href="mailto:b09901072@ntu.edu.tw">email</a> me.
+    </p>
+    </span>
+    <audio src="./music.mp3" loop autoplay></audio>
+    
+
+</body>
+<script>   
+    function timefunc() {
+        var d=new Date();
+        var year=d.getFullYear();
+        var month=d.getMonth();
+        var day=d.getDate();
+        if(day<10) day="0"+day;
+        var hour=d.getHours();
+        var min=d.getMinutes();
+        var sec=d.getSeconds();
+        if(sec<10) sec="0"+sec;
+        document.getElementById("time").innerHTML=month+"-"+day+"-"+year+" "+hour+":"+min+":"+sec;
+    }
+    setInterval(timefunc,1000);
+
+</script>
+</html>

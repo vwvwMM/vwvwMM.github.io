@@ -1,0 +1,45 @@
+#school:hover,
+#department:hover,
+#badminton:hover,
+#table:hover,
+#majong:hover {
+  color: red;
+}
+img {
+  position: relative;
+  float: left;
+  left: 30px;
+}
+#time {
+  position: relative;
+  left: 1000px;
+  top: -30px;
+  width: 150px;
+  margin: 0, 0, 0, 0;
+  border: 1px;
+}
+body{
+    background-image: url("background.jpg");
+    font: caption;
+}
+h1{
+    text-align: center;
+}
+div {
+  width: 700px;
+  margin: 0, 0, 0, 0;
+  border: 1px;
+  left: 0;
+}
+li {
+  display:list-item;
+  width: 600px;
+  margin: 0, 0, 0, 0;
+  border: 1px;
+}
+#bio {
+  float: right;
+  width: 900px;
+  margin: 0, 0, 0, 0;
+  right: 400;
+}
